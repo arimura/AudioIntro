@@ -13,7 +13,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let path = Bundle.main.path(forResource: "ukulele.mp3", ofType:nil)!
+        let url = URL(fileURLWithPath: path)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer.play()
+        } catch {
+            // couldn't load file :(
+        }
     }
 
 
