@@ -18,6 +18,7 @@
 		74F04C022734EE7F00D2FF50 /* AudioIntroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F04C012734EE7F00D2FF50 /* AudioIntroUITestsLaunchTests.swift */; };
 		74F04C102738C7E000D2FF50 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F04C0F2738C7E000D2FF50 /* AVFoundation.framework */; };
 		74F04C122738C97900D2FF50 /* ukulele.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 74F04C112738C97900D2FF50 /* ukulele.mp3 */; };
+		74F04C1627390AE800D2FF50 /* AVAudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F04C1527390AE800D2FF50 /* AVAudioPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		74F04C012734EE7F00D2FF50 /* AudioIntroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioIntroUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		74F04C0F2738C7E000D2FF50 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		74F04C112738C97900D2FF50 /* ukulele.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ukulele.mp3; sourceTree = "<group>"; };
+		74F04C1527390AE800D2FF50 /* AVAudioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVAudioPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				74F04BDE2734EE7C00D2FF50 /* AppDelegate.swift */,
 				74F04BE02734EE7C00D2FF50 /* SceneDelegate.swift */,
 				74F04BE22734EE7C00D2FF50 /* ViewController.swift */,
+				74F04C1527390AE800D2FF50 /* AVAudioPlayerViewController.swift */,
 				74F04C112738C97900D2FF50 /* ukulele.mp3 */,
 				74F04BE42734EE7C00D2FF50 /* Main.storyboard */,
 				74F04BE72734EE7E00D2FF50 /* Assets.xcassets */,
@@ -277,6 +280,7 @@
 				74F04BE32734EE7C00D2FF50 /* ViewController.swift in Sources */,
 				74F04BDF2734EE7C00D2FF50 /* AppDelegate.swift in Sources */,
 				74F04BE12734EE7C00D2FF50 /* SceneDelegate.swift in Sources */,
+				74F04C1627390AE800D2FF50 /* AVAudioPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
