@@ -27,10 +27,23 @@
                                     <segue destination="Iyt-lf-wuJ" kind="show" id="jB8-eX-NVW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wri-Sx-xjN">
+                                <rect key="frame" x="107" y="149" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="fif-b7-35f"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="AVPlayer"/>
+                                <connections>
+                                    <segue destination="kSx-Hu-q3Y" kind="show" id="I5S-fV-mbD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wri-Sx-xjN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H1V-j0-feh"/>
+                            <constraint firstItem="wri-Sx-xjN" firstAttribute="top" secondItem="r1V-UV-tSZ" secondAttribute="bottom" constant="50" id="Hkq-bx-s8b"/>
                             <constraint firstItem="r1V-UV-tSZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="bJF-Vy-ws2"/>
                             <constraint firstItem="r1V-UV-tSZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j4i-dT-kui"/>
                         </constraints>
@@ -39,6 +52,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="64" y="82"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="HM9-To-zXq">
+            <objects>
+                <viewController id="kSx-Hu-q3Y" customClass="AVPlayerViewController" customModule="AudioIntro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hhq-hN-lTH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6th-Qa-ZLT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ikg-kJ-tZG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gS-L9-U8C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="862" y="531"/>
         </scene>
         <!--Audio Player View Controller-->
         <scene sceneID="fqe-ac-e1s">
