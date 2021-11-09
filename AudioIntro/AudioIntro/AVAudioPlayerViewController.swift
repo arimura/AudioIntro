@@ -14,7 +14,7 @@ class AVAudioPlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let path = Bundle.main.path(forResource: "ukulele.mp3", ofType:nil)!
+        let path = Bundle.main.path(forResource: "ukulele.mp3", ofType: nil)!
         let url = URL(fileURLWithPath: path)
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: url)
