@@ -14,11 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let audioSession = AVAudioSession.sharedInstance()
-           do {
-              try audioSession.setCategory(.playback)
-           } catch {
-               print("Setting category to AVAudioSessionCategoryPlayback failed.")
-           }
+        do {
+           try audioSession.setCategory(.playback)
+        } catch {
+            print("Setting category to AVAudioSessionCategoryPlayback failed.")
+        }
+     
+        UIApplication.shared.beginReceivingRemoteControlEvents()
         
         // Override point for customization after application launch.
         return true

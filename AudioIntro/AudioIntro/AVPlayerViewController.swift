@@ -41,13 +41,13 @@ class AVPlayerViewController: UIViewController {
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-           guard let playerItem = object as? AVPlayerItem else { return }
-               if keyPath == "status"{
-                   if playerItem.status == AVPlayerItem.Status.readyToPlay{
-                       avPlayer.play()
-                   }else{
-                       print("error")
-                   }
-               }
-       }
+        guard let playerItem = object as? AVPlayerItem else { return }
+        if keyPath == "status"{
+            if playerItem.status == AVPlayerItem.Status.readyToPlay{
+                avPlayer.play()
+            }else{
+                print("error")
+            }
+        }
+    }
 }
