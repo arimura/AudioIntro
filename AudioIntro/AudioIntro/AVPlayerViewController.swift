@@ -22,6 +22,11 @@ class AVPlayerViewController: UIViewController {
         avPlayer = AVPlayer(playerItem: playerItem)
         playerItem.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.new, context: nil)
         
+        let timeScale = CMTimeScale(NSEC_PER_SEC)
+        let time = CMTime(seconds: 0.5, preferredTimescale: timeScale)
+        avPlayer.addPeriodicTimeObserver(forInterval: time, queue:DispatchQueue.main) {time in
+            print("hoge")
+        }
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
